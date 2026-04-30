@@ -9,3 +9,6 @@ These skills are designed to be small, easy to adapt, and composable. They work 
 I built these skills as a way to fix common failure modes I see with Claude Code, Codex, and other coding agents.
 
 Software engineering fundamentals matter more than ever. These skills are my best effort at condensing these fundamentals into repeatable practices, to help you ship the best apps.
+
+[More skills](https://skills.sh)
+[Even more skills](https://21st.dev/community/agents)
