@@ -11,4 +11,7 @@ I built these skills as a way to fix common failure modes I see with Claude Code
 Software engineering fundamentals matter more than ever. These skills are my best effort at condensing these fundamentals into repeatable practices, to help you ship the best apps.
 
 [More skills](https://skills.sh)
+
 [Even more skills](https://21st.dev/community/agents)
+
+[Prisma ORM skills](https://github.com/prisma/skills)
