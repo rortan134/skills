@@ -10,9 +10,10 @@ Creating accurate and meaningful benchmarks requires careful attention to how mo
 - Benchmark before optimizing: Always measure code performance with real benchmarks before making optimization decisions[2].
 - Profile in production or realistic environments: Benchmark and profile code in the actual environment it will run (e.g., Deno, Node, Bun) to account for engine-specific optimizations and avoid misleading micro-benchmarks[2].
 - Focus on bottlenecks: Optimize the code sections that consume the most runtime, not just any slow-looking code[2].
-- Prioritize readability and maintainability: Write clear, maintainable code first, and only optimize if benchmarks show a real need[2].
+- Prioritize readability and maintainability: Write clear, maintainable code first, and **only** optimize if benchmarks show a real need[2].
 - Document optimization rationale: When making changes for performance, include comments explaining benchmark results and reasoning.
 - Focus on reducing memory usage by simplifying data structures, merging similar elements, and using efficient storage formats.
+- Never optimize without measuring (premature optimization)
 
 ## Techniques
 
@@ -128,8 +129,7 @@ elements.forEach((el, i) => {
 
 ---
 
-- Never optimize without measuring (premature optimization)
-- Use "mitata" library for benchmarking tooling. Use context7 for learning more about it.
+### Use "mitata" library for benchmarking tooling. Use context7 for learning more about it
 
 ---
 

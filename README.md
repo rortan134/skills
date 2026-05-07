@@ -10,8 +10,12 @@ I built these skills as a way to fix common failure modes I see with Claude Code
 
 Software engineering fundamentals matter more than ever. These skills are my best effort at condensing these fundamentals into repeatable practices, to help you ship the best apps.
 
-[More skills](https://skills.sh)
+[reliable-systems](/.agents/skills/reliable-systems/) is probably the best skill here.
 
-[Even more skills](https://21st.dev/community/agents)
+[Skills](https://skills.sh)
+
+[Even more skills](https://github.com/suhailkakar/the-skills)
+
+[All of the skills](https://21st.dev/community/agents)
 
 [Prisma ORM skills](https://github.com/prisma/skills)

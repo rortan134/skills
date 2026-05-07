@@ -266,3 +266,11 @@ function withMetrics(client: HttpClient): HttpClient {
 ```
 
 With the record, you can wrap sendRequest with timing instrumentation and return a new HttpClient. You can inject faults for testing. You can swap the implementation for a mock. You can add retries, tracing, request rewriting, tenant-specific behavior, or whatever other cross-cutting concern production has discovered for you this quarter. All at runtime, without touching the library's source code. The concrete function is a dead end. The record is a seam. and the code that depends on it never needs to know.
+
+## Other applicable patterns
+
+- Explicit reasonable service timeouts.
+- Retry transient failures. With jitter. Honor `Retry-After` headers.
+- Minimize. Don't collect or return what you don't need. Every field you ask for is a liability. Birth date for a B2B SaaS? Probably not. Phone for a free-tier user? Only if you're going to call them.
+- Circuit breaker for chronic failures. When an upstream is failing for many requests in a row, stop calling it for a window — let it recover instead of piling on.
+- Concurrency limits on outbound. A sudden burst of requests could fan out unbounded outbound calls — overwhelms upstream, gets you rate-limited, takes your app down with it.
